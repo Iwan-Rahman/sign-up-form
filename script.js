@@ -15,7 +15,7 @@ function emailOrPhone(){
   if(email.checkValidity()){
     phone.removeAttribute('required');
   }else if(phone.checkValidity()){
-    phone.removeAttribute('required');
+    email.removeAttribute('required');
   }
 }
 
