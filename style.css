@@ -2,6 +2,12 @@
   font-family: pangolin;
   src: url(./font/Pangolin/Pangolin-Regular.ttf);
 }
+
+:root {
+  --style-color: mediumpurple;
+  --main-color: antiquewhite;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +32,7 @@ body {
 .main {
   background-image: url(./img/underwater.jpg);
   background-size: cover;
-  color: antiquewhite;
+  color: var(--main-color);;
   box-sizing: border-box;
   width: 65vw;
   display: flex;
@@ -53,7 +59,7 @@ p:first-of-type {
 
 
 form {
-  color: whitesmoke;
+  color: var(--main-color);
   background-color: rgb(0,0,0,0.5);
   height: 33.33vh;
   box-sizing: border-box;
@@ -65,11 +71,11 @@ form {
 }
 
 p > em {
-  color: mediumpurple;
+  color: var(--style-color);;
 }
 
 form > h2 {
-  color: mediumpurple;
+  color: var(--style-color);;
 }
 
 form fieldset {
@@ -98,18 +104,46 @@ input {
 
 button {
   font-family: inherit;
-  background-color: mediumpurple;
-  color: antiquewhite;
+  background-color: var(--style-color);;
+  color: var(--main-color);;
   appearance: none;
   border: 0;
-  padding: 0.2rem;
+  padding: 0.4rem 1.6rem;
   border-radius: 10%;
   margin-bottom: 0.2rem;
   cursor: pointer;
 }
 
 p > span {
-  color: mediumpurple;
+  color: var(--style-color);;
   font-weight: 600;
   cursor: pointer;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  max-height: 4rem;
+  color: var(--main-color);
+  background-color: rgb(148, 112, 219,0.2);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.hero > div > img {
+  max-height: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero div > h2 {
+  margin-top: -0.7rem;
 }
