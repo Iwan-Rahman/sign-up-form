@@ -24,6 +24,6 @@ function checkPassword(){
     confirmPassword.setCustomValidity("Password does not match");
     confirmPassword.reportValidity();
   }else{
-    confirm.setCustomValidity();
+    confirmPassword.setCustomValidity("");
   }
 }
